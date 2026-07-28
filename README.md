@@ -9,7 +9,7 @@ To design and simulate a **4-bit Arithmetic Logic Unit (ALU)** using **SystemVer
 
 ## Apparatus Required  
 - Computer with **Windows** OS  
-- **ModelSim 2020.1** (or later) installed  
+- Synopsys VCS
 - SystemVerilog source code editor  
 
 ---
@@ -34,18 +34,18 @@ Common ALU operations included in this design are:
 - Implements ALU operations with **Case Statements**  
 - Parameterized design for scalability  
 - Includes a **Testbench** for functional verification  
-- Compatible with **ModelSim 2020.1**  
+- Compatible with **Sysnopsys VCS**  
 
 ---
 
 ## Procedure  
 
-1. **Open ModelSim 2020.1**  
-   - Launch the ModelSim IDE from the Start Menu (Windows) or terminal (Linux).  
+1. **Open Synopsys**  
+   - Launch the Synopsys with MobaXterm (Windows) or terminal (Linux).  
 
 2. **Create a New Project**  
-   - Go to `File → New → Project`.  
-   - Enter a project name (e.g., `ALU_Enum_Project`).  
+   - Go to `Folder → New → Project`.  
+   - Enter a project name (e.g., `ALU_ENUM`).  
    - Set the project location.  
    - Click **OK**.  
 
@@ -54,12 +54,12 @@ Common ALU operations included in this design are:
    - Create a new source file named `alu_enum_tb.sv` and type the testbench code.  
 
 4. **Compile the Design and Testbench**  
-   - Select both files (`alu_enum.sv` and `alu_enum_tb.sv`).  
-   - Right-click → **Compile Selected**.  
+   - In terminal `vcs -full64 -sverilog alu_enum.sv alu_enum_tb.sv`.  
+   - Then `./simv`.  
    - Ensure there are no syntax errors.  
 
 5. **Start Simulation**  
-   - Go to `Simulate → Start Simulation`.  
+   - Go to `Terminal -> dve -full64`.  
    - In the **Library window**, expand **work**.  
    - Select the testbench module (`alu_enum_tb`).  
    - Click **OK**.  
@@ -170,7 +170,7 @@ endmodule
 
 ### Simulation Output
 
-The simulation is carried out using ModelSim 2020.1.
+The simulation is carried out using Synopsys VCS.
 
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/73eb74c9-a649-4baa-b335-bad7c01273f3" />
 
