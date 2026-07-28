@@ -3,7 +3,7 @@
 ---
 
 ## Aim  
-To design and simulate a **4-bit Arithmetic Logic Unit (ALU)** using **SystemVerilog HDL** with **Enumerated Data Types and Case Statements**, and verify its functionality using **ModelSim 2020.1**.
+To design and simulate a **4-bit Arithmetic Logic Unit (ALU)** using **SystemVerilog HDL** with **Enumerated Data Types and Case Statements**, and verify its functionality using **Synopsys VCS**.
 
 ---
 
@@ -178,6 +178,6 @@ The simulation is carried out using Synopsys VCS.
 
 ### Result
 
-The design and simulation of a 4-bit ALU using Enumerated Data Types and Case Statements in SystemVerilog HDL was successfully carried out in ModelSim 2020.1.
+The design and simulation of a 4-bit ALU using Enumerated Data Types and Case Statements in SystemVerilog HDL was successfully carried out in Synopsys VCS.
 The ALU performed arithmetic, logical, and shift operations correctly as verified from the simulation outputs.
 
